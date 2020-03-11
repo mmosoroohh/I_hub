@@ -130,7 +130,7 @@
       <workItem from="1583833102546" duration="4990000" />
       <workItem from="1583838134980" duration="459000" />
       <workItem from="1583838619142" duration="11034000" />
-      <workItem from="1583851298070" duration="11241000" />
+      <workItem from="1583851298070" duration="12750000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583917205011</created>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583917236325</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit.">
+      <created>1583919316475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583919316475</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,10 +185,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1583917236247">
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1583919316324">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583917236247" />
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583919316324" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -190,6 +197,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="873" y="191" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583855719575" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1583919346413">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1583919346413" />
     <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1583851298887">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

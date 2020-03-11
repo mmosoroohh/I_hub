@@ -3,8 +3,8 @@ from rest_framework import permissions
 from rest_framework.response import Response
 from rest_framework.views import status
 
-from .models import Process, Assets
-from .serializers import AssetSerializer, ProcessSerializer
+from .models import Process, Assets, Groups
+from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer
 
 
 def get_asset(name):
@@ -88,7 +88,42 @@ class ListCreateProcessView(generics.ListAPIView):
         )
 
 
-class ProcessDetailView(generics.RetrieveUpdateDestroyAPIView):
+class GroupDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Groups.objects.all()
+    serializer_class = GroupSerializer
+
+    def get(self, request, *args, **kwargs):
+        try:
+            group = self.queryset.get(pk=kwargs["pk"])
+            return Response(GroupSerializer(group).data)
+        except Groups.DoesNotExist:
+            return Response(
+                data={"message": "Group with id: {} does not exist".format(kwargs["pk"])},
+                status=status.HTTP_404_NOT_FOUND)
+
+    def put(self, request, *args, **kwargs):
+        try:
+            group = self.queryset.get(pk=kwargs["pk"])
+            serializer = GroupSerializer()
+            update_group = serializer.update(group, request.data)
+            return Response(ProcessSerializer(update_group).data)
+        except Groups.DoesNotExist:
+            return Response(
+                data={"message": "Group with id: {} does not exist".format(kwargs["pk"])},
+                status=status.HTTP_404_NOT_FOUND)
+
+    def delete(self, request, *args, **kwargs):
+        try:
+            group = self.queryset.get(pk=kwargs["pk"])
+            group.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Groups.DoesNotExist:
+            return Response(
+                data={"message": "Group with id: {} does not exist".format(kwargs["pk"])},
+                status=status.HTTP_404_NOT_FOUND)
+
+
+class GroupDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Process.objects.all()
     serializer_class = ProcessSerializer
 
@@ -121,3 +156,4 @@ class ProcessDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Response(
                 data={"message": "Process with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
+
