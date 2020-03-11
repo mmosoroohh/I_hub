@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e85456d4-6fcb-4451-bf87-70e74aff3d00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/I_Hub.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1ce9eda9-ce97-4b23-b08a-f4aee1bf092a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474424b6-51b6-4e9b-9247-6ecaad8f33fe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474424b6-51b6-4e9b-9247-6ecaad8f33fe/storage_v2/_src_/database/hub.9ZQBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474424b6-51b6-4e9b-9247-6ecaad8f33fe/storage_v2/_src_/database/hub.9ZQBAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474424b6-51b6-4e9b-9247-6ecaad8f33fe/storage_v2/_src_/database/hub.9ZQBAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474424b6-51b6-4e9b-9247-6ecaad8f33fe/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/aa9dc0bb-7781-41ce-9cb2-6fe60833a221.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ae2a871a-2ce5-4b98-85ab-f85709806a01/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configurations/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +87,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite&#10;postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -168,12 +130,32 @@
       <workItem from="1583833102546" duration="4990000" />
       <workItem from="1583838134980" duration="459000" />
       <workItem from="1583838619142" duration="11034000" />
-      <workItem from="1583851298070" duration="9232000" />
+      <workItem from="1583851298070" duration="11241000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1583917205011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583917205011</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first commit.">
+      <created>1583917236324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583917236325</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="first commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1034" y="212" width="800" height="684" key="#Inspections" timestamp="1583832682299">
@@ -184,6 +166,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1034" y="212" width="800" height="684" key="#Plugins/70.27.1850.1053@70.27.1850.1053" timestamp="1583833081473" />
+    <state x="590" y="211" width="810" height="692" key="#Python" timestamp="1583919139364">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="590" y="211" width="810" height="692" key="#Python/70.27.1850.1053@70.27.1850.1053" timestamp="1583919139364" />
     <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583855451532">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -192,6 +178,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1583917236247">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583917236247" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
