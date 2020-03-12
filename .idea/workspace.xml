@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e85456d4-6fcb-4451-bf87-70e74aff3d00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +131,7 @@
       <workItem from="1583838134980" duration="459000" />
       <workItem from="1583838619142" duration="11034000" />
       <workItem from="1583851298070" duration="15985000" />
-      <workItem from="1584004219490" duration="8589000" />
+      <workItem from="1584004219490" duration="13544000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583917205011</created>
@@ -169,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584004571047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first commit.">
+      <created>1584019210074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584019210074</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,10 +207,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584004570336">
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584019209912">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584004570336" />
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584019209912" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -213,10 +219,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="873" y="191" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583855719575" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584004575384">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584019213110">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584004575384" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584019213110" />
     <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1584004231137">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
