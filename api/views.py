@@ -123,7 +123,7 @@ class GroupDetailView(generics.RetrieveUpdateDestroyAPIView):
                 status=status.HTTP_404_NOT_FOUND)
 
 
-class GroupDetailView(generics.RetrieveUpdateDestroyAPIView):
+class ProcessDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Process.objects.all()
     serializer_class = ProcessSerializer
 
