@@ -59,7 +59,7 @@ class ListCreateAsset(generics.ListAPIView):
         asset = Assets.objects.create(
             asset_name=request.data["asset_name"],
             location=request.data["location"],
-            duration=request.data["duration"],
+            operator=request.data["operator"],
             process=request.data["process"]
         )
         return Response(data=AssetSerializer(asset).data, status=status.HTTP_201_CREATED)

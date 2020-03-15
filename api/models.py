@@ -17,14 +17,14 @@ class Assets(models.Model):
     asset_name = models.CharField(max_length=255, null=False)
     location = models.CharField(max_length=255, null=False)
     process = models.ForeignKey(Process, related_name='Asset_process', on_delete=models.CASCADE)
-    duration = models.CharField(max_length=255, null=False)
+    operator = models.CharField(max_length=255, null=False)
 
     def __str__(self):
         return self.asset_name
 
 
 class Groups(models.Model):
-    group_name = models.CharField(max_length=255, null=False)
+    group_name = models.CharField(max_length=255, null=False, blank=False)
 
     def __str__(self):
         return self.group_name
