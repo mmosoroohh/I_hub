@@ -1,10 +1,40 @@
 from rest_framework import generics
-from rest_framework import permissions
 from rest_framework.response import Response
 from rest_framework.views import status
 
-from .models import Process, Assets, Groups, DataClassification, DataMaps, DataInputs, Report
-from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer, DataClassificationSerializer, DataMapSerializer, DataInputSerializer, ReportSerializer
+from .models import Process, Assets, Groups, DataClassification, DataMaps, DataInputs, Report, User
+from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer, DataClassificationSerializer, \
+    DataMapSerializer, DataInputSerializer, ReportSerializer, UserSerializer
+
+
+class RegistrationAPIView(generics.CreateAPIView):
+    """Register new user"""
+    serializer_class = UserSerializer
+
+    def post(self, request):
+        request.data['username'] = request.data['username'].lower()
+        user = request.data
+
+        serializer = self.serializer_class(
+            data=user, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        success_message={
+            "success": "User was successfully registered"
+        }
+        return Response(success_message, status=status.HTTP_201_CREATED)
+
+
+class LoginAPIView(generics.CreateAPIView):
+    """Login a registered user"""
+    serializer_class = UserSerializer
+
+    def post(self, request):
+        user = request.data
+        serializer = self.serializer_class(data=user)
+        serializer.is_valid(raise_exception=True)
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 def get_asset(name):

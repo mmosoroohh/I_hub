@@ -6,6 +6,7 @@ from rest_framework.response import Response
 class Process(models.Model):
     process_name = models.CharField(max_length=255, null=False)
     owner = models.CharField(max_length=255, null=False)
+
     # owner = models.ForeignKey(User, related_name='user_name', on_delete=models.CASCADE)
 
     def __str__(self):
@@ -58,3 +59,12 @@ class DataInputs(models.Model):
     data_subjects = models.CharField(max_length=255, null=False)
     data_items = models.CharField(max_length=255, null=False)
     data_sources = models.CharField(max_length=255, null=False)
+
+
+class User(models.Model):
+    name = models.CharField(max_length=255, null=False)
+    username = models.CharField(max_length=255, unique=True)
+    password = models.CharField(max_length=255, null=False)
+
+    def __str__(self):
+        return self.username

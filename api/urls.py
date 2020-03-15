@@ -3,7 +3,8 @@ from .views import (
     ListCreateAsset, ListCreateProcessView, ProcessDetailView,
     GroupDetailView, DataClassificationDetailView, ListCreateGroupsView,
     ListCreateDataClassificationView, ListCreateDataMapsView, DataMapsDetailView,
-    ListCreateReportsView, ReportDetailView, ListCreateDataInputView, DataInputsDetailView
+    ListCreateReportsView, ReportDetailView, ListCreateDataInputView, DataInputsDetailView,
+    RegistrationAPIView, LoginAPIView
 )
 
 urlpatterns = [
@@ -19,5 +20,7 @@ urlpatterns = [
     path('reports', ListCreateReportsView.as_view(), name="list-create-reports"),
     path('reports/<int:pk>', ReportDetailView.as_view(), name="report-detail"),
     path('data-inputs', ListCreateDataInputView.as_view(), name="list-create-data-inputs"),
-    path('data-inputs/<int:pk>', DataInputsDetailView.as_view(), name="data-inputs-detail")
+    path('data-inputs/<int:pk>', DataInputsDetailView.as_view(), name="data-inputs-detail"),
+    path('users/register', RegistrationAPIView.as_view(), name='register-user'),
+    path('users/login', LoginAPIView.as_view(), name="login-user")
 ]

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e85456d4-6fcb-4451-bf87-70e74aff3d00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +136,8 @@
       <workItem from="1583838134980" duration="459000" />
       <workItem from="1583838619142" duration="11034000" />
       <workItem from="1583851298070" duration="15985000" />
-      <workItem from="1584004219490" duration="13544000" />
+      <workItem from="1584004219490" duration="16628000" />
+      <workItem from="1584199219047" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583917205011</created>
@@ -175,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584019210074</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add informmation on how to access the api on README.md">
+      <created>1584027453252</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584027453252</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +197,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="first commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit." />
+    <MESSAGE value="Add informmation on how to access the api on README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add informmation on how to access the api on README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1034" y="212" width="800" height="684" key="#Inspections" timestamp="1583832682299">
@@ -207,10 +221,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584019209912">
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584027453166">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584019209912" />
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584027453166" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -219,14 +233,14 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="873" y="191" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583855719575" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584019213110">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584027469824">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584019213110" />
-    <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1584004231137">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584027469824" />
+    <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1584199218995">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="1083" y="378" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584004231137" />
+    <state x="1083" y="378" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584199218995" />
     <state x="1102" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1584018280022">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
