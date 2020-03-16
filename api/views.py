@@ -54,8 +54,6 @@ class ListCreateAsset(generics.ListAPIView):
     serializer_class = AssetSerializer
 
     def post(self, request):
-        import pdb;
-        pdb.set_trace()
         asset = Assets.objects.create(
             asset_name=request.data["asset_name"],
             location=request.data["location"],

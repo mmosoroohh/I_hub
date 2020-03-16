@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e85456d4-6fcb-4451-bf87-70e74aff3d00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/migrations/0002_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f25ac2b-fb87-4b06-b5fa-f7c1df81bf39/storage_v2/_src_/database/hub.9ZQBAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/migrations/0002_user.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,47 +26,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hub: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hub: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hub: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hub@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="hub: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -136,7 +97,7 @@
       <workItem from="1583838619142" duration="11034000" />
       <workItem from="1583851298070" duration="15985000" />
       <workItem from="1584004219490" duration="16628000" />
-      <workItem from="1584199219047" duration="1668000" />
+      <workItem from="1584199219047" duration="3324000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1583917205011</created>
@@ -194,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584277669819</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add informmation on how to access the api on README.md">
+      <created>1584301018721</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1584301018721</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,18 +187,18 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="590" y="211" width="810" height="692" key="#Python/70.27.1850.1053@70.27.1850.1053" timestamp="1583919139364" />
-    <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583855451532">
+    <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584349314627">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583855451532" />
+    <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584349314627" />
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583832983887">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584277669181">
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1584301018505">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584277669181" />
+    <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1584301018505" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -239,10 +207,10 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="873" y="191" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583855719575" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584277672866">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1584301037281">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584277672866" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1584301037281" />
     <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1584199218995">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>

@@ -7,8 +7,6 @@ class Process(models.Model):
     process_name = models.CharField(max_length=255, null=False)
     owner = models.CharField(max_length=255, null=False)
 
-    # owner = models.ForeignKey(User, related_name='user_name', on_delete=models.CASCADE)
-
     def __str__(self):
         return self.process_name
 
@@ -16,7 +14,7 @@ class Process(models.Model):
 class Assets(models.Model):
     asset_name = models.CharField(max_length=255, null=False)
     location = models.CharField(max_length=255, null=False)
-    process = models.ForeignKey(Process, related_name='Asset_process', on_delete=models.CASCADE)
+    process = models.CharField(max_length=255, null=False)
     operator = models.CharField(max_length=255, null=False)
 
     def __str__(self):

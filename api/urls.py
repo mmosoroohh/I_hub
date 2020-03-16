@@ -4,11 +4,12 @@ from .views import (
     GroupDetailView, DataClassificationDetailView, ListCreateGroupsView,
     ListCreateDataClassificationView, ListCreateDataMapsView, DataMapsDetailView,
     ListCreateReportsView, ReportDetailView, ListCreateDataInputView, DataInputsDetailView,
-    RegistrationAPIView, LoginAPIView
+    RegistrationAPIView, LoginAPIView, AssetDetailView
 )
 
 urlpatterns = [
     path('assets', ListCreateAsset.as_view(), name="list-create-asset"),
+    path('assets/<int:pk>', AssetDetailView.as_view(), name="assets-detail"),
     path('process', ListCreateProcessView.as_view(), name='list-create-process'),
     path('process/<int:pk>', ProcessDetailView.as_view(), name="process-detail"),
     path('groups', ListCreateGroupsView.as_view(), name='list-create-group'),
