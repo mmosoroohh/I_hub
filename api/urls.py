@@ -4,10 +4,12 @@ from .views import (
     GroupDetailView, DataClassificationDetailView, ListCreateGroupsView,
     ListCreateDataClassificationView, ListCreateDataMapsView, DataMapsDetailView,
     RegistrationAPIView, LoginAPIView, AssetDetailView, ListCreateDataItemsView,
-    DataItemsDetailView, ListCreateDataSubjectView, DataSubjectDetailView
+    DataItemsDetailView, ListCreateDataSubjectView, DataSubjectDetailView, ListCreateSubjectSourceView
 )
 
 urlpatterns = [
+    path('users/register', RegistrationAPIView.as_view(), name='register-user'),
+    path('users/login', LoginAPIView.as_view(), name="login-user"),
     path('assets', ListCreateAsset.as_view(), name="list-create-asset"),
     path('assets/<int:pk>', AssetDetailView.as_view(), name="assets-detail"),
     path('process', ListCreateProcessView.as_view(), name='list-create-process'),
@@ -22,6 +24,5 @@ urlpatterns = [
     path('data-items/<int:pk>', DataItemsDetailView.as_view(), name="data-items-detail"),
     path('data-subjects', ListCreateDataSubjectView.as_view(), name="list-create-data-subject"),
     path('data-subjects/<int:pk>', DataSubjectDetailView.as_view(), name="data-inputs-detail"),
-    path('users/register', RegistrationAPIView.as_view(), name='register-user'),
-    path('users/login', LoginAPIView.as_view(), name="login-user")
+    path('reports/<int:src_pk>/test/<int:sub_pk>', ListCreateSubjectSourceView.as_view(), name="list-create-report")
 ]

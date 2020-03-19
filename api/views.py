@@ -4,8 +4,8 @@ from rest_framework.views import status
 
 from .models import Process, Assets, Groups, DataClassification, DataMaps, DataItems, DataSubject, SubjectSource
 from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer, DataClassificationSerializer, \
-    DataMapSerializer, UserSerializer, DataItemsSerializer, DataSubjectsSerializer, LoginSerializer
-
+    DataMapSerializer, UserSerializer, DataItemsSerializer, DataSubjectsSerializer, LoginSerializer, \
+    SubjectSourceSerializer
 
 
 class RegistrationAPIView(generics.CreateAPIView):
@@ -20,7 +20,7 @@ class RegistrationAPIView(generics.CreateAPIView):
             data=user, context={'request': request})
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        success_message={
+        success_message = {
             "success": "User was successfully registered",
             "data": serializer.data
         }
@@ -35,7 +35,7 @@ class LoginAPIView(generics.CreateAPIView):
         user = request.data
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
-        success_message={
+        success_message = {
             "Success": "Successfully login",
             "data": serializer.data
         }
@@ -64,7 +64,7 @@ class ListCreateAsset(generics.ListAPIView):
             asset_name=request.data["asset_name"],
             location=request.data["location"],
             operator=request.data["operator"],
-            process=request.data["process"]
+            processor=request.data["processor"]
         )
         return Response(data=AssetSerializer(asset).data, status=status.HTTP_201_CREATED)
 
@@ -402,3 +402,44 @@ class DataSubjectDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Response(
                 data={"message": "Data subject with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
+
+
+class ListCreateSubjectSourceView(generics.ListAPIView):
+    queryset = SubjectSource.objects.all()
+    serializer_class = SubjectSourceSerializer
+
+    def post(self, request, *args, **kwargs):
+
+        subject = DataSubject.objects.get(pk=kwargs.get('sub_pk'))
+        source = Assets.objects.get(pk=kwargs.get('src_pk'))
+        serializer = SubjectSourceSerializer(
+            data={"subject": subject.id, "source": source.id, "name": request.data.get('name')})
+        if serializer.is_valid():
+            data = serializer.save(name=request.data.get('name'),
+                                   subject=subject, source=source)
+            return Response(data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+    # def post(self, request, *args, **kwargs):
+    #     serializer = SubjectSourceSerializer(data=request.data,
+    #                                          context={'request': request})
+    #     subject_serializer = DataSubjectsSerializer(data={}, context={'request': request})
+    #     source_serializer = AssetSerializer(data={}, context={'request': request})
+    #     if serializer.is_valid() and subject_serializer.is_valid() and source_serializer.is_valid():
+    #         subject = subject_serializer.save()
+    #         source = source_serializer.save()
+    #         serializer.save(data_subject=subject,
+    #                         data_source=source
+    #                         )
+    #         data = {
+    #             'status': 'Success',
+    #             'data': serializer.data
+    #         }
+    #         return Response(data, status=status.HTTP_201_CREATED)
+    #     data = {
+    #         'status': 'error',
+    #         'data': serializer.errors,
+    #         'message': "Kindly correct above errors"
+    #     }
+    #     return Response(data, status=status.HTTP_400_BAD_REQUEST)
