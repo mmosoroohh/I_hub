@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e85456d4-6fcb-4451-bf87-70e74aff3d00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/I_Hub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/I_Hub.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +74,9 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="I_hub" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -76,6 +86,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="I_Hub/invalid/Django" />
+    </ignored-facets>
   </component>
   <component name="ProjectId" id="1Yu5mk9IHkMYzCHZg2RbT0Fl7w5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -89,7 +104,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="I_Hub" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="I_Hub" />
+      </console-settings>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="I_Hub" type="Python.DjangoServer" factoryName="Django server">
@@ -115,6 +139,18 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -170,33 +206,44 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="590" y="211" width="810" height="692" key="#Python/70.27.1850.1053@70.27.1850.1053" timestamp="1583919139364" />
-    <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583855451532">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="712" y="157" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583950580379">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="712" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1583950580379" />
     <state x="1034" y="212" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583855451532" />
-    <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583832983887">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="801" y="258" width="556" height="280" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583970999024">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="801" y="258" width="556" height="280" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1583970999024" />
     <state x="1155" y="355" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1583832983887" />
     <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2" timestamp="1583917236247">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="864" y="100" width="1030" height="919" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583917236247" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584403532850">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1584403532850" />
+    <state x="466" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1584199097519" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1583852603496">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="263" height="500" key="HiddenNamespacesPopup/70.27.1850.1053@70.27.1850.1053" timestamp="1583852603496" />
-    <state x="873" y="191" width="1022" height="737" key="SettingsEditor" timestamp="1583855719575">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="213" y="27" width="910" height="737" key="SettingsEditor" timestamp="1583969394359">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="213" y="27" width="910" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1583969394359" />
     <state x="873" y="191" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583855719575" />
-    <state x="1083" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1583851298887">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="687" y="274" key="com.intellij.ide.util.TipDialog" timestamp="1583992593121">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="687" y="274" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1583992593121" />
     <state x="1083" y="378" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583851298887" />
-    <state x="1102" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1583833027442">
-      <screen x="70" y="27" width="1850" height="1053" />
+    <state x="762" y="189" width="672" height="478" key="search.everywhere.popup" timestamp="1584366059116">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="762" y="189" width="672" height="478" key="search.everywhere.popup/0.27.1366.741/1366.0.1920.1080@0.27.1366.741" timestamp="1584366059116" />
+    <state x="762" y="189" width="672" height="478" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1584224733343" />
     <state x="1102" y="257" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1583833027442" />
     <state x="1164" y="438" width="540" height="232" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1583845576280">
       <screen x="70" y="27" width="1850" height="1053" />

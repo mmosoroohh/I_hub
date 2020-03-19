@@ -6,7 +6,6 @@ from rest_framework.response import Response
 class Process(models.Model):
     process_name = models.CharField(max_length=255, null=False)
     owner = models.CharField(max_length=255, null=False)
-    # owner = models.ForeignKey(User, related_name='user_name', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.process_name
@@ -15,15 +14,15 @@ class Process(models.Model):
 class Assets(models.Model):
     asset_name = models.CharField(max_length=255, null=False)
     location = models.CharField(max_length=255, null=False)
-    process = models.ForeignKey(Process, related_name='Asset_process', on_delete=models.CASCADE)
-    duration = models.CharField(max_length=255, null=False)
+    # process = models.CharField(max_length=255, null=False)
+    operator = models.CharField(max_length=255, null=False)
 
     def __str__(self):
         return self.asset_name
 
 
 class Groups(models.Model):
-    group_name = models.CharField(max_length=255, null=False)
+    group_name = models.CharField(max_length=255, null=False, blank=False)
 
     def __str__(self):
         return self.group_name
@@ -58,3 +57,12 @@ class DataInputs(models.Model):
     data_subjects = models.CharField(max_length=255, null=False)
     data_items = models.CharField(max_length=255, null=False)
     data_sources = models.CharField(max_length=255, null=False)
+
+
+class User(models.Model):
+    name = models.CharField(max_length=255, null=False)
+    username = models.CharField(max_length=255, unique=True)
+    password = models.CharField(max_length=255, null=False)
+
+    def __str__(self):
+        return self.username
