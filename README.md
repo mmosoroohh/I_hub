@@ -46,37 +46,37 @@ In order to install and run this project locally, you would need to have the fol
 </tr>
 <tr>
 <td>Get an asset</td>
-<td>/api/assets/asset_id</td>
+<td>/api/assets/id</td>
 <td>GET</td>
 </tr>
 <tr>
 <td>Edit an asset</td>
-<td>/api/assets/asset_id</td>
+<td>/api/assets/id</td>
 <td>PUT</td>
 </tr>
 <tr>
 <td>Delete an asset</td>
-<td>/api/assets/asset_id</td>
+<td>/api/assets/id</td>
 <td>DELETE</td>
 </tr>
 <tr>
 <td>Create a process</td>
-<td>/api/process/process_id</td>
+<td>/api/process/id</td>
 <td>POST</td>
 </tr>
 <tr>
 <td>Fetch a process</td>
-<td>/api/process/process_id</td>
+<td>/api/process/id</td>
 <td>GET</td>
 </tr>
 <tr>
 <td>Edit</td>
-<td>/api/process/process_id</td>
+<td>/api/process/id</td>
 <td>PUT</td>
 </tr>
 <tr>
 <td>Delete a process</td>
-<td>/api/process/process_id</td>
+<td>/api/process/id</td>
 <td>DELETE</td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ In order to install and run this project locally, you would need to have the fol
 </tr>
 <tr>
 <td>Get a group</td>
-<td>/api/groups/group_id</td>
+<td>/api/groups/id</td>
 <td>GET</td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ In order to install and run this project locally, you would need to have the fol
 </tr>
 <tr>
 <td>Delete a group</td>
-<td>/api/groups/group_id</td>
+<td>/api/groups/id</td>
 <td>DELETE</td>
 </tr>
 <tr>
@@ -150,53 +150,53 @@ In order to install and run this project locally, you would need to have the fol
 <td>DELETE</td>
 </tr>
 <tr>
-<td>Create a report</td>
-<td>/api/reports</td>
+<td>Create data item</td>
+<td>/api/data-items</td>
 <td>POST</td>
 </tr>
 <tr>
-<td>Get a report</td>
-<td>/api/report/report_id</td>
+<td>Get a data item</td>
+<td>/api/data-items/id</td>
 <td>GET</td>
 </tr>
 <tr>
-<td>Get report</td>
-<td>/api/reports</td>
+<td>Get data items</td>
+<td>/api/data-items</td>
 <td>GET</td>
 </tr>
 <tr>
-<td>Edit a report</td>
-<td>/api/reports/report_id</td>
+<td>Edit data item</td>
+<td>/api/data-items/id</td>
 <td>PUT</td>
 </tr>
 <tr>
-<td>Delete a report</td>
-<td>/api/reports</td>
+<td>Delete a data item</td>
+<td>/api/data-items</td>
 <td>DELETE</td>
 </tr>
 <tr>
-<td>Create a data input</td>
-<td>/api/data-inputs</td>
+<td>Create a data subject</td>
+<td>/api/data-subjects</td>
 <td>POST</td>
 </tr>
 <tr>
-<td>Get a data input</td>
-<td>/api/data-input/id</td>
+<td>Get a data subject</td>
+<td>/api/data-subjects/id</td>
 <td>GET</td>
 </tr>
 <tr>
-<td>Get data inputs</td>
-<td>/api/data-inputs</td>
+<td>Get data subjects</td>
+<td>/api/data-subjects</td>
 <td>GET</td>
 </tr>
 <tr>
-<td>Edit a data input</td>
-<td>/api/data-inputs/id</td>
+<td>Edit a data subject</td>
+<td>/api/data-subjects/id</td>
 <td>PUT</td>
 </tr>
 <tr>
-<td>Delete a data input</td>
-<td>/api/data-inputs/id</td>
+<td>Delete a data subject</td>
+<td>/api/data-subjects/id</td>
 <td>DELETE</td>
 </tr>
 </table>
