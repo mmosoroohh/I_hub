@@ -1,4 +1,7 @@
+from abc import ABC
+
 from rest_framework import serializers
+from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from api.models import Assets, Groups, DataClassification, Process, DataMaps, DataSubject, DataItems, SubjectSource, User
 
@@ -7,6 +10,28 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
+
+
+class LoginSerializer(serializers.Serializer):
+    username = serializers.CharField(max_length=255)
+    password = serializers.CharField(max_length=128, write_only=True)
+
+    def validate(self, data):
+        username = data.get('username', None)
+        password = data.get('password', None)
+
+        if username is None:
+            raise serializers.ValidationError(
+                'Username required to log in'
+            )
+        if password is None:
+            raise serializers.ValidationError(
+                'Password required to log in'
+            )
+
+        return {
+            'username': username
+        }
 
 
 class AssetSerializer(serializers.ModelSerializer):

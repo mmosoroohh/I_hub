@@ -4,7 +4,8 @@ from rest_framework.views import status
 
 from .models import Process, Assets, Groups, DataClassification, DataMaps, DataItems, DataSubject, SubjectSource
 from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer, DataClassificationSerializer, \
-    DataMapSerializer, UserSerializer, DataItemsSerializer, DataSubjectsSerializer, SubjectSourceSerializer
+    DataMapSerializer, UserSerializer, DataItemsSerializer, DataSubjectsSerializer, LoginSerializer
+
 
 
 class RegistrationAPIView(generics.CreateAPIView):
@@ -20,21 +21,26 @@ class RegistrationAPIView(generics.CreateAPIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         success_message={
-            "success": "User was successfully registered"
+            "success": "User was successfully registered",
+            "data": serializer.data
         }
         return Response(success_message, status=status.HTTP_201_CREATED)
 
 
 class LoginAPIView(generics.CreateAPIView):
     """Login a registered user"""
-    serializer_class = UserSerializer
+    serializer_class = LoginSerializer
 
     def post(self, request):
         user = request.data
         serializer = self.serializer_class(data=user)
         serializer.is_valid(raise_exception=True)
+        success_message={
+            "Success": "Successfully login",
+            "data": serializer.data
+        }
 
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(success_message, status=status.HTTP_200_OK)
 
 
 def get_asset(name):

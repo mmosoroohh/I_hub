@@ -40,6 +40,16 @@ In order to install and run this project locally, you would need to have the fol
 <th>HTTP-Verbs</th>
 </tr>
 <tr>
+<td>Register a user</td>
+<td>/api/users/register</td>
+<td>POST</td>
+</tr>
+<tr>
+<td>Login a user</td>
+<td>/api/users/login</td>
+<td>POST</td>
+</tr>
+<tr>
 <td>Create an asset</td>
 <td>/api/assets</td>
 <td>POST</td>

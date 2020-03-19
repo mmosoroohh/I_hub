@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import BaseUserManager
 
 
 # Create your models here.
@@ -58,10 +59,28 @@ class SubjectSource(models.Model):
     source = models.ForeignKey(Assets, on_delete=models.CASCADE)
 
 
+class UsersManager(BaseUserManager):
+    """Users model manager"""
+
+    def create_user(self, username, password=None, is_active=True, is_admin=False):
+        user = self.model(username=username)
+        user.active = is_active
+        user.admin = is_admin
+        user.set_password(password)
+        user.save()
+        return user
+
+    def create_normaluser(self, username):
+        """Create regular user."""
+        return self.create_user(username)
+
+
 class User(models.Model):
     name = models.CharField(max_length=255, null=False)
     username = models.CharField(max_length=255, unique=True)
     password = models.CharField(max_length=255, null=False)
+
+    objects = UsersManager()
 
     def __str__(self):
         return self.username
