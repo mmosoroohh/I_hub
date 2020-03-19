@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from api.models import Assets, Groups, DataClassification, Process, DataMaps, Report, DataInputs
+from api.models import Assets, Groups, DataClassification, Process, DataMaps, DataSubject, DataItems, SubjectSource, User
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -39,13 +39,19 @@ class DataMapSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class ReportSerializer(serializers.ModelSerializer):
+class DataSubjectsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Report
+        model = DataSubject
         fields = '__all__'
 
 
-class DataInputSerializer(serializers.ModelSerializer):
+class DataItemsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = DataInputs
+        model = DataItems
+        fields = '__all__'
+
+
+class SubjectSourceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SubjectSource
         fields = '__all__'

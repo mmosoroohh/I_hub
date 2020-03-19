@@ -106,7 +106,7 @@ In order to install and run this project locally, you would need to have the fol
 </tr>
 <tr>
 <td>Get a data classification</td>
-<td>/api/groups/group_id</td>
+<td>/api/data-classification/id</td>
 <td>GET</td>
 </tr>
 <tr>

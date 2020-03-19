@@ -2,9 +2,9 @@ from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.views import status
 
-from .models import Process, Assets, Groups, DataClassification, DataMaps, DataInputs, Report, User
+from .models import Process, Assets, Groups, DataClassification, DataMaps, DataItems, DataSubject, SubjectSource
 from .serializers import AssetSerializer, ProcessSerializer, GroupSerializer, DataClassificationSerializer, \
-    DataMapSerializer, DataInputSerializer, ReportSerializer, UserSerializer
+    DataMapSerializer, UserSerializer, DataItemsSerializer, DataSubjectsSerializer, SubjectSourceSerializer
 
 
 class RegistrationAPIView(generics.CreateAPIView):
@@ -300,103 +300,99 @@ class DataMapsDetailView(generics.RetrieveUpdateDestroyAPIView):
                 status=status.HTTP_404_NOT_FOUND)
 
 
-class ListCreateReportsView(generics.ListAPIView):
-    queryset = Report.objects.all()
-    serializer_class = ReportSerializer
+class ListCreateDataItemsView(generics.ListAPIView):
+    queryset = DataItems.objects.all()
+    serializer_class = DataItemsSerializer
 
     def post(self, request, *args, **kwargs):
-        report = Report.objects.create(
-            report_name=request.data["report_name"],
-            record=request.data["record"],
-            maps=request.data["maps"]
+        item = DataItems.objects.create(
+            name=request.data["name"],
         )
         return Response(
-            data=ReportSerializer(report).data,
+            data=DataItemsSerializer(item).data,
             status=status.HTTP_201_CREATED
         )
 
 
-class ReportDetailView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Report.objects.all()
-    serializer_class = ReportSerializer
+class DataItemsDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = DataItems.objects.all()
+    serializer_class = DataItemsSerializer
 
     def get(self, request, *args, **kwargs):
         try:
-            report = self.queryset.get(pk=kwargs["pk"])
-            return Response(ReportSerializer(report).data)
-        except Report.DoesNotExist:
+            item = self.queryset.get(pk=kwargs["pk"])
+            return Response(DataItemsSerializer(item).data)
+        except DataItems.DoesNotExist:
             return Response(
-                data={"message": "Report with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data item with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
 
     def put(self, request, *args, **kwargs):
         try:
-            report = self.queryset.get(pk=kwargs["pk"])
-            serializer = ReportSerializer()
-            update_report = serializer.update(report, request.data)
-            return Response(ReportSerializer(update_report).data)
-        except Report.DoesNotExist:
+            item = self.queryset.get(pk=kwargs["pk"])
+            serializer = DataItemsSerializer()
+            update_item = serializer.update(item, request.data)
+            return Response(DataItemsSerializer(update_item).data)
+        except DataItems.DoesNotExist:
             return Response(
-                data={"message": "Report with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data item with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
 
     def delete(self, request, *args, **kwargs):
         try:
-            report = self.queryset.get(pk=kwargs["pk"])
-            report.delete()
+            item = self.queryset.get(pk=kwargs["pk"])
+            item.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
-        except Report.DoesNotExist:
+        except DataItems.DoesNotExist:
             return Response(
-                data={"message": "Report with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data item with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
 
 
-class ListCreateDataInputView(generics.ListAPIView):
-    queryset = DataInputs.objects.all()
-    serializer_class = DataInputSerializer
+class ListCreateDataSubjectView(generics.ListAPIView):
+    queryset = DataSubject.objects.all()
+    serializer_class = DataSubjectsSerializer
 
     def post(self, request, *args, **kwargs):
-        data_inputs = DataInputs.objects.create(
-            data_subjects=request.data["data_subjects"],
-            data_items=request.data["data_items"],
-            data_sources=request.data["data_sources"]
+        data_subject = DataSubject.objects.create(
+            name=request.data["name"],
         )
         return Response(
-            data=DataInputSerializer(data_inputs).data,
+            data=DataSubjectsSerializer(data_subject).data,
             status=status.HTTP_201_CREATED
         )
 
 
-class DataInputsDetailView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = DataInputs.objects.all()
-    serializer_class = DataInputSerializer
+class DataSubjectDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = DataSubject.objects.all()
+    serializer_class = DataSubjectsSerializer
 
     def get(self, request, *args, **kwargs):
         try:
-            data_input = self.queryset.get(pk=kwargs["pk"])
-            return Response(DataInputSerializer(data_input).data)
-        except DataInputs.DoesNotExist:
+            data_subject = self.queryset.get(pk=kwargs["pk"])
+            return Response(DataSubjectsSerializer(data_subject).data)
+        except DataSubject.DoesNotExist:
             return Response(
-                data={"message": "Data input with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data subject with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
 
     def put(self, request, *args, **kwargs):
         try:
-            data_input = self.queryset.get(pk=kwargs["pk"])
-            serializer = DataInputSerializer()
-            update_data = serializer.update(data_input, request.data)
-            return Response(DataInputSerializer(update_data).data)
-        except DataInputs.DoesNotExist:
+            data_subject = self.queryset.get(pk=kwargs["pk"])
+            serializer = DataSubjectsSerializer()
+            update_subject = serializer.update(data_subject, request.data)
+            return Response(DataSubjectsSerializer(update_subject).data)
+        except DataSubject.DoesNotExist:
             return Response(
-                data={"message": "Data input with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data subject with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
 
     def delete(self, request, *args, **kwargs):
         try:
-            data_input = self.queryset.get(pk=kwargs["pk"])
-            data_input.delete()
+            data_subject = self.queryset.get(pk=kwargs["pk"])
+            data_subject.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
-        except DataInputs.DoesNotExist:
+        except DataSubject.DoesNotExist:
             return Response(
-                data={"message": "Data input with id: {} does not exist".format(kwargs["pk"])},
+                data={"message": "Data subject with id: {} does not exist".format(kwargs["pk"])},
                 status=status.HTTP_404_NOT_FOUND)
